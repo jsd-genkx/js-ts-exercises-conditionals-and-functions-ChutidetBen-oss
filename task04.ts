@@ -6,7 +6,7 @@
 
 // TODO BONUS: Rewrite with if
 
-const num:number = 33;
+const num:number = 105;
 if ( num%3===0 && num%5===0 ) {
     console.log("FizzBuzz");
 } else if (num%3===0){

@@ -3,12 +3,13 @@
 // 6–10 chars → "Moderate"
 // 11+ chars → "Strong"
 
-const password = "pass123nnnnnnnn";
-console.log(password.length)
+const password = "pass1ghjk";
+const len = password.length;
+console.log(len);
 
-if (password.length<6){
+if (len<6){
     console.log("Too short");
-} else if (password.length>=6 && password.length<=10) {
+} else if (len>=6 && len<=10) {
     console.log("Moderate");
 } else {
     console.log("Strong");

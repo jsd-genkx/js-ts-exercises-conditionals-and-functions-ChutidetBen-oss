@@ -1,8 +1,7 @@
 // TODO-05: Convert this if to switch/case (You can add more options.)
 // TODO BONUS: Use object lookup
 
-const fruit: string = "orange";
-
+const fruit: string = "applE";
 // if (fruit === "apple") {
 // 	console.log("An apple a day keeps the doctor away.");
 // } else if (fruit === "banana") {
@@ -12,7 +11,7 @@ const fruit: string = "orange";
 // } else {
 // 	console.log("Unknown fruit.");
 // }
-	switch (fruit){
+	switch (fruit.toLocaleLowerCase()){
 		case "apple":
 			console.log("An apple a day keeps the doctor away.");
 			break ;
@@ -23,5 +22,5 @@ const fruit: string = "orange";
 			console.log("Oranges are full of vitamin C.");
 			break;
 		default:
-			console.log(`You don't put anything`);
+			console.log(`Unknow fruit`);
 	}

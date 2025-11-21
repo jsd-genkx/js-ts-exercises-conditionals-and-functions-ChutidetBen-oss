@@ -6,13 +6,34 @@
 
 // TODO BONUS: Rewrite with if
 
-const num:number = 105;
-if ( num%3===0 && num%5===0 ) {
+const number:number = 105;
+// if ( num%3===0 && num%5===0 ) {
+//     console.log("FizzBuzz");
+// } else if (num%3===0){
+//     console.log('Fizz');
+// } else if (num%5===0){
+//     console.log('Buzz');
+// } else {
+//     console.log("Not divisible by 3 or 5");
+// }
+
+const fizzBuzz = (number: number) => {
+    if (number % 3 === 0 && number % 5 === 0) {
     console.log("FizzBuzz");
-} else if (num%3===0){
-    console.log('Fizz');
-} else if (num%5===0){
-    console.log('Buzz');
-} else {
+    } else if (number % 3 === 0) {
+    console.log("Fizz");
+    } else if (number % 5 === 0) {
+    console.log("Buzz");
+    } else {
     console.log("Not divisible by 3 or 5");
-}
+    }
+};
+
+// fizzBuzz(5)
+
+// // Example Test Cases
+// fizzBuzz(15); // "FizzBuzz"
+// fizzBuzz(9); // "Fizz"
+// fizzBuzz(10); // "Buzz"
+// fizzBuzz(7); // "Not divisible by 3 or 5"
+console.log(fizzBuzz(9));
